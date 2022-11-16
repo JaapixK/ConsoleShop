@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace ConsoleShop
         //Global class variables
         public static int money = 200;
 
+        //Start Menu + function to exit application
         public static void ShopFront()
         {
             Console.WriteLine("______________________________________________________\n");
@@ -43,12 +45,12 @@ namespace ConsoleShop
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("\tYour input is invalid. Choose again please.");
+                    Console.WriteLine("\tYour input is invalid. Choose from the available options please.");
                     ShopFront();
                     break;
             }
         }
-
+        //First category with menu
         public static void CategoryOne()
         {
             Console.ReadKey();
@@ -99,14 +101,14 @@ namespace ConsoleShop
                     break;
 
                 default:
-                    Console.WriteLine("\tYour input is invalid. Choose again please.");
+                    Console.WriteLine("\tYour input is invalid. Choose from the available options please.");
                     CategoryOne();
                     break;
 
 
             }
         }
-
+        //second category with menu
         public static void CategoryTwo()
         {
             Console.ReadKey();
@@ -125,31 +127,31 @@ namespace ConsoleShop
                 case "1":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Bluebird Ready Salted Chips for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryTwo();
                     break;
 
                 case "2":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Bluebird Salt & Vinegar Chips for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryTwo();
                     break;
 
                 case "3":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Bluebird Cheezels for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryTwo();
                     break;
 
                 case "4":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Bluebird Twisties for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryTwo();
                     break;
 
                 case "5":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Nestle Reduced Cream Onion Dip for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryTwo();
                     break;
 
                 case "6":
@@ -164,7 +166,7 @@ namespace ConsoleShop
 
             }
         }
-
+        //third category with menu
         public static void CategoryThree()
         {
             Console.ReadKey();
@@ -183,31 +185,31 @@ namespace ConsoleShop
                 case "1":
                     money -= 5;
                     Console.WriteLine($"\tYou have purchased Coca Cola 1.5l for $5. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryThree();
                     break;
 
                 case "2":
                     money -= 5;
                     Console.WriteLine($"\tYou have purchased Sprite 1.5l for $5. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryThree();
                     break;
 
                 case "3":
                     money -= 5;
                     Console.WriteLine($"\tYou have purchased Fanta 1.5l for $5. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryThree();
                     break;
 
                 case "4":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Keri Apple Juice 1.0l for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryThree();
                     break;
 
                 case "5":
                     money -= 4;
                     Console.WriteLine($"\tYou have purchased Keri Orange Juice 1.0l for $4. Your remaining shop funds is ${money}");
-                    CategoryOne();
+                    CategoryThree();
                     break;
 
                 case "6":
@@ -215,20 +217,19 @@ namespace ConsoleShop
                     break;
 
                 default:
-                    Console.WriteLine("\tYour input is invalid. Choose again please.");
+                    Console.WriteLine("\tYour input is invalid. Choose from the available options please.");
                     CategoryThree();
                     break;
 
 
             }
         }
-
+        //function to add funds to existing balance
         public static void AddFunds()
         {
-            Console.Clear();
             Console.WriteLine("\tAdd Funds ↓↓↓");
-            money= int.Parse(Console.ReadLine()) + money;
-            Console.WriteLine($"\tYour Balance has been uodated. Shop Funds avalaible is now {money}");
+            money = int.Parse(Console.ReadLine()) + money;
+            Console.WriteLine($"\tYour Balance has been updated. Shop Funds avalaible is now {money}");
             ShopFront();
          }
 
