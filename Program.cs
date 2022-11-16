@@ -19,7 +19,8 @@ namespace ConsoleShop
             Console.WriteLine("\tTo shop Chocolate Bars         - Press [1].");
             Console.WriteLine("\tTo shop Chips & Dips           - Press [2].");
             Console.WriteLine("\tTo shop Soft Drinks & Juices   - Press [3].");
-            Console.WriteLine("\tAdd funds to Shop Balance      -Press [4].\n");
+            Console.WriteLine("\tTo add funds to Shop Balance   - Press [4].\n");
+            Console.WriteLine("To exit Application              - Press [x].\n");
             Console.WriteLine("______________________________________________________\n");
             Console.WriteLine("↓↓↓↓ Enter your option ↓↓↓↓");
             switch(Console.ReadLine())
@@ -36,6 +37,9 @@ namespace ConsoleShop
                 case "4": 
                     AddFunds();
                     break;
+                case "x":
+                    Environment.Exit(0);
+
                 default:
                     Console.WriteLine("\tYour input is invalid. Choose again please.");
                     ShopFront();
