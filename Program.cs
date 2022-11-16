@@ -39,7 +39,7 @@ namespace ConsoleShop
                     break;
                 case "x":
                     Environment.Exit(0);
-
+                    break;
                 default:
                     Console.WriteLine("\tYour input is invalid. Choose again please.");
                     ShopFront();
