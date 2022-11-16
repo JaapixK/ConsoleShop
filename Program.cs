@@ -20,9 +20,11 @@ namespace ConsoleShop
             Console.WriteLine("\tTo shop Chips & Dips           - Press [2].");
             Console.WriteLine("\tTo shop Soft Drinks & Juices   - Press [3].");
             Console.WriteLine("\tTo add funds to Shop Balance   - Press [4].\n");
-            Console.WriteLine("To exit Application              - Press [x].\n");
+            Console.WriteLine("\tTo exit Application            - Press [x].\n");
             Console.WriteLine("______________________________________________________\n");
-            Console.WriteLine("↓↓↓↓ Enter your option ↓↓↓↓");
+            Console.WriteLine("\tEnter your option below");
+
+            Console.Write("\t");
             switch(Console.ReadLine())
             {
                 case "1":
@@ -51,15 +53,16 @@ namespace ConsoleShop
         {
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("\t______________________________Chcolate Bars_________________________\n");
-            Console.WriteLine("Cadbury Dairy Milk Original    180g   ($5)    - Press 1 to purchase[1]"); 
-            Console.WriteLine("Cadbury Dairy Milk Top Deck    180g   ($5)    - Press 2 to purchase[2]");
-            Console.WriteLine("Whittaker's Creamy Milk        250g   ($7)    - Press 3 to purchase[3]");
-            Console.WriteLine("Whittaker's Almond Gold        250g   ($7)    - Press 4 to purchase[4]");
-            Console.WriteLine("Whittaker's Berry Forest       250g   ($7)    - Press 5 to purchase[5]");
-            Console.WriteLine("]tReturn to Shop Front                        - Press 6 to return  [6]\n");
+            Console.WriteLine("\t______________________________Chocolate Bars_________________________\n");
+            Console.WriteLine("\tCadbury Dairy Milk Original    180g   ($5)    - Press 1 to purchase[1]"); 
+            Console.WriteLine("\tCadbury Dairy Milk Top Deck    180g   ($5)    - Press 2 to purchase[2]");
+            Console.WriteLine("\tWhittaker's Creamy Milk        250g   ($7)    - Press 3 to purchase[3]");
+            Console.WriteLine("\tWhittaker's Almond Gold        250g   ($7)    - Press 4 to purchase[4]");
+            Console.WriteLine("\tWhittaker's Berry Forest       250g   ($7)    - Press 5 to purchase[5]");
+            Console.WriteLine("\tReturn to Shop Front                          - Press 6 to return  [6]\n");
 
-            switch(Console.ReadLine())
+            Console.Write("\t");
+            switch (Console.ReadLine())
             {
                 case "1":
                     money -= 5;
@@ -106,15 +109,17 @@ namespace ConsoleShop
 
         public static void CategoryTwo()
         {
+            Console.ReadKey();
             Console.Clear();
             Console.WriteLine("\t___________________________Chips & Dips_____________________________\n");
-            Console.WriteLine("Bluebird Ready Salted Chips    150g   ($4)    - Press 1 to purchase[1]");
-            Console.WriteLine("Bluebird Salt & Vinegar Chips  150g   ($4)    - Press 2 to purchase[2]");
-            Console.WriteLine("Bluebird Cheezels              150g   ($4)    - Press 3 to purchase[3]");
-            Console.WriteLine("Bluebird Twisties              150g   ($4)    - Press 4 to purchase[4]");
-            Console.WriteLine("Nestle Reduced Cream Onion Dip 230ml  ($4)    - Press 5 to purchase[5]");
-            Console.WriteLine("]tReturn to Shop Front                        - Press 6 to return  [6]\n");
+            Console.WriteLine("\tBluebird Ready Salted Chips    150g   ($4)    - Press 1 to purchase[1]");
+            Console.WriteLine("\tBluebird Salt & Vinegar Chips  150g   ($4)    - Press 2 to purchase[2]");
+            Console.WriteLine("\tBluebird Cheezels              150g   ($4)    - Press 3 to purchase[3]");
+            Console.WriteLine("\tBluebird Twisties              150g   ($4)    - Press 4 to purchase[4]");
+            Console.WriteLine("\tNestle Reduced Cream Onion Dip 230ml  ($4)    - Press 5 to purchase[5]");
+            Console.WriteLine("\tReturn to Shop Front                          - Press 6 to return  [6]\n");
 
+            Console.Write("\t");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -152,7 +157,7 @@ namespace ConsoleShop
                     break;
 
                 default:
-                    Console.WriteLine("\tYour input is invalid. Choose again please.");
+                    Console.WriteLine("\tYour input is invalid. Choose from the available options please.\n");
                     CategoryTwo();
                     break;
 
@@ -162,15 +167,17 @@ namespace ConsoleShop
 
         public static void CategoryThree()
         {
+            Console.ReadKey();
             Console.Clear();
             Console.WriteLine("\t________________________Soft Drinks & Juices_______________________\n");
-            Console.WriteLine("Coca Cola              1.5l    ($5)    - Press 1 to purchase[1]");
-            Console.WriteLine("Sprite                 1.5l    ($5)    - Press 2 to purchase[2]");
-            Console.WriteLine("Fanta                  1.5l    ($5)    - Press 3 to purchase[3]");
-            Console.WriteLine("Keri Apple Juice       1.0l    ($4)    - Press 4 to purchase[4]");
-            Console.WriteLine("Keri Orange Juice      1.0l    ($4)    - Press 5 to purchase[5]");
-            Console.WriteLine("]tReturn to Shop Front                 - Press 6 to return  [6]\n");
+            Console.WriteLine("\tCoca Cola              1.5l    ($5)    - Press 1 to purchase[1]");
+            Console.WriteLine("\tSprite                 1.5l    ($5)    - Press 2 to purchase[2]");
+            Console.WriteLine("\tFanta                  1.5l    ($5)    - Press 3 to purchase[3]");
+            Console.WriteLine("\tKeri Apple Juice       1.0l    ($4)    - Press 4 to purchase[4]");
+            Console.WriteLine("\tKeri Orange Juice      1.0l    ($4)    - Press 5 to purchase[5]");
+            Console.WriteLine("\tReturn to Shop Front                   - Press 6 to return  [6]\n");
 
+            Console.Write("\t");
             switch (Console.ReadLine())
             {
                 case "1":
